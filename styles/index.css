@@ -13,6 +13,95 @@ h2 {
     margin-bottom: 5px;
 }
 
+.services .card .date {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    border-bottom: none;
+    padding-bottom: 0px;
+    position: absolute;
+    top: 0;
+    background: #dc4f72;
+    padding: 15px;
+    margin-bottom: 0;
+    right: 0;
+    margin-top: 0;
+}
+
+.services .card .red {
+    background: rgba(238, 97, 120, 0.2);
+    color: #dc4f72;
+    font-size: 13px;
+    text-align: left;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.services .card .green {
+    background: rgba(0, 128, 0, 0.2);
+    color: #008000;
+    font-size: 13px;
+    text-align: left;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.services .card .blue {
+    background: rgba(0, 0, 255, 0.2);
+    color: #0000ff;
+    font-size: 13px;
+    text-align: left;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.services-info img {
+    filter: grayscale(100%);
+    transition: 0.3s ease-in-out;
+}
+
+.services-info:hover img {
+    filter: grayscale(0);
+    transition: 0.3s ease-in-out;
+}
+
+.card {
+    transform: translateY(0);
+    transition: 0.3s ease-in;
+
+}
+
+.services-info:hover .card {
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.3s ease-in;
+}
+
+.services .card-body a {
+    color: #2c3038;
+}
+
+.services-info:hover a {
+    color: #dc4f72;
+}
+
+.services .card-footer a {
+    color: #dc4f72;
+    cursor: pointer;
+}
+
+.services-info i {
+    font-size: 10px;
+    transform: translateX(0);
+    transition: all 0.5s;
+}
+
+.services-info :hover i {
+    transform: translateX(5px);
+    transition: all 0.5s;
+}
+
+/* -----------end Serivces-------- */
 .questions {
     background-color: #f7f9fc;
 }
@@ -110,28 +199,33 @@ h2 {
     display: none;
 }
 
-.testimonials .item img{
+.testimonials .item img {
     width: 100px;
     height: 100px;
     object-fit: cover;
     object-position: top;
-    border:3px solid #dc4f72 ;
+    border: 3px solid #dc4f72;
 }
+
 .testimonials .item i {
     color: #d5d6d7;
     font-size: 30px;
 }
-.testimonials h4{
+
+.testimonials h4 {
     font-size: 18px;
     color: #dc4f72;
 }
-.testimonials .name{
+
+.testimonials .name {
     color: #dc4f72;
     font-size: 13px;
 }
+
 .owl-dots {
     margin-top: 25px;
 }
+
 .owl-theme .owl-dots .owl-dot span {
     width: 50px;
     height: 5px;
@@ -142,12 +236,13 @@ h2 {
     border-radius: 30px;
 }
 
-.btn-primary{
+.btn-primary {
     color: #fff;
     background-color: #dc4f72;
     border-color: #dc4f72;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     color: #fff;
     background-color: #d62f58;
     border-color: #cf2952
@@ -155,37 +250,45 @@ h2 {
 
 /* --------end testimonials  */
 
-.footer{
+.footer {
     background-color: #f7f9fc;
 }
+
 .footer h3 {
     font-size: 20px;
     text-align: left;
     line-height: 3;
 }
+
 .footer li {
     list-style: none;
     line-height: 2;
 }
+
 .footer a {
     text-decoration: none;
     color: #656f7b;
     text-align: left;
 }
-.footer a:hover{
+
+.footer a:hover {
     color: #dc4f72;
     opacity: 1;
 }
-.footer h4{
+
+.footer h4 {
     font-size: 18px;
     color: #5a5a5a;
 }
-.footer p{
+
+.footer p {
     color: #dc4f72;
 }
-.social a{
-  color: #2c3038;
+
+.social a {
+    color: #2c3038;
 }
+
 .backToTop {
     width: 50px;
     height: 50px;
@@ -202,9 +305,9 @@ h2 {
     box-shadow: -4px 4px 24px -10px #f55f8d;
     visibility: hidden;
     opacity: 0;
-  }
+}
 
-  .cd-top--is-visible {
+.cd-top--is-visible {
     visibility: visible;
     opacity: 1;
-  }
+}
