@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*--------------header------------------ */
+
+.header {
+    height: 90px;
+    background: gold;
+}
+
+.header .container {
+    height: 100%;
+    color: #dc4f72;
+}
+
+.header .container a {
+    text-decoration: none;
+    color: #2C3038;
+    display: inline-block;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.header .container a:hover {
+    color: #dc4f72;
+    transition: all 0.5s;
+}
+
+.header .container a::after {
+    content:'';
+    width: 0;
+    height: 3px;
+    background-color:#dc4f72;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.header .container a:hover::after {
+    width: 50%;
+    transition: all 0.5s;
+}
+
+.header .container a:nth-child(1) {
+    color: #dc4f72;
+}
+
+ .container .theme-button {
+    color: #dc4f72;
+    text-transform: uppercase;
+    border: 1px solid #dc4f72;
+    transition: all 0.5s;
+}
+
+ .container .theme-button:hover {
+    background-color: #dc4f72;
+    color: aliceblue;
+    transition: all 0.5s;
+}
+
+/* --------------my-carousel---------------------- */
+
+.carousell {
+    padding-top: 80px;
+    /* overflow: hidden; */
+    background-color:rgb(91, 91, 170);
+    /* background-image: url(/images/banner.jpg), linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)); */
+    /* background-attachment: fixed; */
+}
+
+.carousell .container .content{
+    padding-top: 100px;
+}
+
+.carousell .container .content h1 {
+    font-size: 50px;
+}
+
+.carousell .container .img img {
+    transform: rotate(180deg);
+}
+
+/* ----------------tools-------------------- */
+
+
+.tools {
+
+}
+
+.tools .intro {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.tools .intro h1 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #dc4f72;
+}
+
+.tools .intro h2 {
+    color: #2C3038;
+    font-size: 46px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.tools .intro p {
+    color:#5a5a5a;
+    font-size: 16px;
+    line-height: 22.5px;
+    font-weight: 400;
+}
+
+.tools .container .item {
+    background: wheat;
+    margin-left: 30px;
+    padding: 50px;
+}
+
+
+/* -----------------aboutcompany---------------------- */
