@@ -8,7 +8,10 @@
 
 .header {
     height: 90px;
-    background: gold;
+    position: fixed;
+    width: 100%;
+    z-index: 1030;
+    background-color: #fff;
 }
 
 .header .container {
@@ -62,14 +65,20 @@
     transition: all 0.5s;
 }
 
+
+
 /* --------------my-carousel---------------------- */
 
 .carousell {
     padding-top: 80px;
-    /* overflow: hidden; */
-    background-color:rgb(91, 91, 170);
-    /* background-image: url(/images/banner.jpg), linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)); */
-    /* background-attachment: fixed; */
+    background: #ffffff;
+    background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)), url(/images/banner.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    
 }
 
 .carousell .container .content{
@@ -88,7 +97,7 @@
 
 
 .tools {
-
+    padding-bottom: 50px;
 }
 
 .tools .intro {
@@ -97,6 +106,10 @@
 }
 
 .tools .intro h1 {
+    font-family: 'Nunito', sans-serif;
+}
+
+h2 {
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
@@ -118,10 +131,532 @@
 }
 
 .tools .container .item {
-    background: wheat;
+    border-radius: 6px;
+    background: #f7f9fc;
     margin-left: 30px;
     padding: 50px;
+    transform: translateY(0px);
+    transition: all 0.5s;
+}
+
+.tools .container .item:hover {
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.5s;
 }
 
 
 /* -----------------aboutcompany---------------------- */
+   
+.aboutcompany {
+    padding-top: 100px;
+    background: #F7F9FC;
+}
+
+.aboutcompany .container h1 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #f55f8d;
+}
+
+.aboutcompany .container .content {
+    padding-right: 140px;
+}
+
+.aboutcompany .container h2 {
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #2C3038;;
+}
+
+.aboutcompany .container p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24.4px;
+    color: #5a5a5a;
+}
+
+.aboutcompany .container button:hover {
+    background-color:#dc3545;
+    transition:background-color 1s;
+}
+
+.aboutcompany .container .image img {
+    width: 600px;
+    border-radius: 6px;
+    transition: all 1s;
+}
+
+.aboutcompany .container .image img:hover {
+    transform: translateY(-10px);
+    transition: all 1s;
+}
+/* ------------------------statis-------------------- */
+
+.statis {
+    background: #F7F9FC;
+}
+
+
+.course-title {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 34px;
+    color: #fff;
+  }
+
+    .count-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+    max-width:100vw;
+      min-height:100vh;
+    
+  }
+    .wrapper {
+      display: flex;
+    justify-content: center;
+      align-items: center;
+      flex-direction:column;
+    position: relative;
+    margin:  10px;       
+   background-color:#fff;
+    width:400px;
+    height:250px;
+    padding: 40px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    transition: all 0.5s;  
+ }
+
+ .wrapper:hover {
+    box-shadow: -4px 2px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;  
+ }
+
+.statis .count-up .wrapper h1 {
+    font-size: 16px;
+    line-height: 24.5px;
+    font-weight: 700;
+    color: #2C3038;
+}
+
+.statis .count-up .wrapper .counter {
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    color: #dc4f72;
+}
+
+.statis .count-up .wrapper p {
+    color: #5a5a5a;
+
+}
+
+
+    .counter {
+    font-size: 40px;
+      font-weight:bold;
+    background-color: #fff;
+    border-radius: 3px;
+    position: relative;
+    color:#3e3e3e;
+  }
+    .wrapper i {
+    color: #17a2b8;
+    z-index: 1;
+    font-size: 64px;
+   margin-bottom:5px
+  }
+
+.social-container {
+    margin: 20px 0;
+display:flex;
+justify-content:center;
+}
+.social-container a {
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    display: inline-flex;
+    justify-content: center;
+  text-decoration:none;
+    align-items: center;
+ 
+}
+.social-container a:hover{
+text-decoration:none;
+}
+.social-container a:hover i{
+font-size:20px;
+}
+.social-container a i{
+color:#3e3e3e;
+transition:all 0.5s;
+}
+
+/*----------------commit----------------------------- */
+
+.commit {
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)), url(/images/bg.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 480px;
+}
+
+.commit .container h1 {
+    padding-top: 70px;
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.commit .container p {
+    font-size: 16px;
+    color: #eee;
+    line-height: 24.5px;
+}
+
+.commit .container button {
+    line-height: 52px;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 0px 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------- */
+
+.services .card .date {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    border-bottom: none;
+    padding-bottom: 0px;
+    position: absolute;
+    top: 0;
+    background: #dc4f72;
+    padding: 15px;
+    margin-bottom: 0;
+    right: 0;
+    margin-top: 0;
+}
+
+.services .card .red {
+    background: rgba(238, 97, 120, 0.2);
+    color: #dc4f72;
+    font-size: 13px;
+    text-align: left;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.services .card .green {
+    background: rgba(0, 128, 0, 0.2);
+    color: #008000;
+    font-size: 13px;
+    text-align: left;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.services .card .blue {
+    background: rgba(0, 0, 255, 0.2);
+    color: #0000ff;
+    font-size: 13px;
+    text-align: left;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.services-info img {
+    filter: grayscale(100%);
+    transition: 0.3s ease-in-out;
+}
+
+.services-info:hover img {
+    filter: grayscale(0);
+    transition: 0.3s ease-in-out;
+}
+
+.card {
+    transform: translateY(0);
+    transition: 0.3s ease-in;
+
+}
+
+.services-info:hover .card {
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.3s ease-in;
+}
+
+.services .card-body a {
+    color: #2c3038;
+}
+
+.services-info:hover a {
+    color: #dc4f72;
+}
+
+.services .card-footer a {
+    color: #dc4f72;
+    cursor: pointer;
+}
+
+.services-info i {
+    font-size: 10px;
+    transform: translateX(0);
+    transition: all 0.5s;
+}
+
+.services-info :hover i {
+    transform: translateX(5px);
+    transition: all 0.5s;
+}
+
+/* -----------end Serivces-------- */
+.questions {
+    background-color: #f7f9fc;
+}
+
+.questions-tittle h1 {
+    color: #2c3038;
+    font-size: 46px;
+    line-height: 1;
+    font-weight: 500;
+}
+
+.questions-left {
+    position: sticky;
+}
+
+.accordion-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    text-align: left;
+}
+
+.accordion-item h3 {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: normal;
+    margin: 0;
+    cursor: pointer;
+}
+
+
+.questions .col img {
+    transform: translateY(0);
+    transition: all 0.5s ease-in-out;
+}
+
+.questions .col img:hover {
+    transform: translateY(-15px);
+    transition: all 0.5s ease-in-out;
+}
+
+/* -------------end Questions--------------- */
+
+.nav-item a {
+    color: #dc4f72;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.theme-button {
+    transition: 0.3s ease-out;
+    display: inline-block;
+    line-height: 52px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px 30px;
+    text-transform: uppercase;
+}
+
+.btn-outline-primary {
+    color: #dc4f72;
+    border-color: #dc4f72;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #dc4f72;
+    border-color: #dc4f72;
+}
+
+.project img {
+    transform: translateY(0);
+    transition: all 0.5s ease-in-out;
+}
+
+.project img:hover {
+    transform: translateY(-15px);
+    transition: all 0.5s ease-in-out;
+    background-color: gra;
+}
+
+
+
+/* ----------end Project---------- */
+
+.testimonials {
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(247, 249, 252, 0.77), rgba(247, 249, 252, 0.77)), url(../images/b2.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.owl-nav {
+    display: none;
+}
+
+.testimonials .item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+    border: 3px solid #dc4f72;
+}
+
+.testimonials .item i {
+    color: #d5d6d7;
+    font-size: 30px;
+}
+
+.testimonials h4 {
+    font-size: 18px;
+    color: #dc4f72;
+}
+
+.testimonials .name {
+    color: #dc4f72;
+    font-size: 13px;
+}
+
+.owl-dots {
+    margin-top: 25px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 50px;
+    height: 5px;
+    margin: 0px 7px;
+    background: #D6D6D6;
+    display: block;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #dc4f72;
+    border-color: #dc4f72;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #d62f58;
+    border-color: #cf2952
+}
+
+/* --------end testimonials  */
+
+.footer {
+    background-color: #f7f9fc;
+}
+
+.footer h3 {
+    font-size: 20px;
+    text-align: left;
+    line-height: 3;
+}
+
+.footer li {
+    list-style: none;
+    line-height: 2;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #656f7b;
+    text-align: left;
+}
+
+.footer a:hover {
+    color: #dc4f72;
+    opacity: 1;
+}
+
+.footer h4 {
+    font-size: 18px;
+    color: #5a5a5a;
+}
+
+.footer p {
+    color: #dc4f72;
+}
+
+.social a {
+    color: #2c3038;
+}
+
+.backToTop {
+    width: 50px;
+    height: 50px;
+    background: #f55f8d;
+    border-radius: 8px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    color: #fff;
+    transition: all .2s;
+    box-shadow: -4px 4px 24px -10px #f55f8d;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ------comunity----- */
+
+.comunity .container .get-started:hover {
+    background-color:#dc3545;
+    transition:background-color 2s;
+}
