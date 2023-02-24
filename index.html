@@ -34,8 +34,70 @@
 
 </head>
 
-<body>
+<body id="myBody">
     <header class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <div style="width: 18rem;" class="mx-auto py-3">
+                    <button class="btn" id="switchButton" title="Click to switch theme">
+                        <i class="far fa-moon"></i>
+                        <i class="far fa-sun"></i>
+                    </button>
+                </div>
+                <div class="navbar-brand fs-4" href="#">
+                    <i class="fa-solid fa-handshake"></i>
+                    Masterwork
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav d-flex align-items-center justify-content-end w-100">
+                        <li class="nav-item item1">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                                <span class="fa fa-angle-down"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Blog posts</a></li>
+                                <li><a class="dropdown-item" href="#">Blog single</a></li>
+                                <li><a class="dropdown-item" href="#">Landing page</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn theme-button fs-6 fw-semibold mx-4" href="#">Schedule a Demo</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!--header bootstrap  -->
+
+
+
+
+
+
+
+
+    <!-- <header class="header">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="icon fs-3 fw-bolder">
                 <i class="fa-solid fa-handshake"></i>
@@ -63,9 +125,9 @@
                 <button class="btn theme-button fs-6 fw-semibold py-3 px-4" href="#">Schedule a Demo</button>
             </nav>
         </div>
-    </header>
+    </header> -->
     <section class="carousell">
-        <div class="container d-flex justify-content-between">
+        <div class="container d-lg-flex justify-content-between">
             <div class="content w-50 ">
                 <h1 class=" fw-semibold mb-4">We Execute Our Ideas <br> From Start to Finish</h1>
                 <p class="fs-5 mb-5 fw-light">Building a beautiful interactive business for <br> startups and innovative
@@ -84,26 +146,31 @@
             <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis
                 dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
         </div>
-        <div class="container d-flex pt-5">
-            <div class="item text-center">
-                <img src="/images/s1.png" alt="">
-                <h1>Interactive</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis?</p>
-            </div>
-            <div class="item text-center">
-                <img src="/images/s2.png" alt="">
-                <h1>Business</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis?</p>
-            </div>
-            <div class="item text-center">
-                <img src="/images/s3.png" alt="">
-                <h1>Inspiration</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum perspiciatis?</p>
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 item text-center ">
+                    <img src="/images/s1.png" alt="">
+                    <h1>Interactive</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Laudantium tempora <br> rerum
+                        perspiciatis?</p>
+                </div>
+                <div class="col-lg-4 col-md-6 item text-center">
+                    <img src="/images/s2.png" alt="">
+                    <h1>Business</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Laudantium tempora <br> rerum
+                        perspiciatis?</p>
+                </div>
+                <div class="col-lg-4 item text-center">
+                    <img src="/images/s3.png" alt="">
+                    <h1>Inspiration</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Laudantium tempora <br> rerum
+                        perspiciatis?</p>
+                </div>
             </div>
         </div>
     </section>
     <section class="aboutcompany">
-        <div class="container d-flex justify-content-between">
+        <div class="container d-lg-flex justify-content-between">
             <div class="content">
                 <h1>ABOUT OUR COMPANY</h1>
                 <h2>The Best Choice For Your Successful Business!</h2>
@@ -119,18 +186,18 @@
     </section>
     <section class="statis">
         <div class="container">
-            <div class="count-up">
-                <div class="wrapper">
+            <div class="count-up row">
+                <div class="wrapper col-lg-4 col-md-6">
                     <h1>Happy Customers</h1>
                     <div class="counter" data-count="10458">0</div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.</p>
                 </div>
-                <div class="wrapper">
+                <div class="wrapper col-lg-4 col-md-6 ">
                     <h1>Winning Awards</h1>
                     <div class="counter" data-count="890">0</div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.</p>
                 </div>
-                <div class="wrapper">
+                <div class="wrapper col-lg-4">
                     <h1>Completed Projects</h1>
                     <div class="counter" data-count="5345">0</div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.</p>
@@ -141,7 +208,9 @@
     <section class="commit">
         <div class="container">
             <h1 class="w-50 mb-4 ">We are true to ourselves, and commit to always perform at our best.</h1>
-            <p class="w-50 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, doloribus atque. Corrupti exercitationem voluptatem ipsum iste consequuntur et vitae voluptas temporibus? Maxime dolores amet voluptatum illo consequatur placeat fugit ducimus.</p>
+            <p class="w-50 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, doloribus
+                atque. Corrupti exercitationem voluptatem ipsum iste consequuntur et vitae voluptas temporibus? Maxime
+                dolores amet voluptatum illo consequatur placeat fugit ducimus.</p>
             <button class="btn btn-light">READ MORE</button>
         </div>
     </section>
@@ -745,7 +814,7 @@
                 </div>
             </div>
         </div>
-        
+
     </footer>
     <a href="#" class="backToTop cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out">
         <i class="fa fa-arrow-up"></i>
@@ -787,26 +856,32 @@
     <!----------------count-up----------------->
     <script>
         $(document).ready(function () {
-        $(".counter").each(function () {
-            var count = $(this);
-            var countTo = count.attr('data-count');
-            // console.log(countTo);
-            $({countNum:count.text()}).animate({
-                    countNum:countTo,
+            $(".counter").each(function () {
+                var count = $(this);
+                var countTo = count.attr('data-count');
+                // console.log(countTo);
+                $({ countNum: count.text() }).animate({
+                    countNum: countTo,
                 },
-                {
-         
-                    duration:3000,
-                    easing:'linear',
-                    step:function(){
-                        count.text(Math.floor(this.countNum));
-                    },
-                    complete:function(){
-                        count.text(this.countNum);
-                    }
-                });
+                    {
+
+                        duration: 3000,
+                        easing: 'linear',
+                        step: function () {
+                            count.text(Math.floor(this.countNum));
+                        },
+                        complete: function () {
+                            count.text(this.countNum);
+                        }
+                    });
+            });
         });
-    });
+    </script>
+    <!------------------ theme---------->
+    <script>
+        document.getElementById("switchButton").onclick = function () {
+            document.getElementById("myBody").classList.toggle("dark");
+        };
     </script>
 </body>
 
